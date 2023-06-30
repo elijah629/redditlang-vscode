@@ -1,0 +1,25 @@
+{
+  "name": "redditlang",
+  "displayName": "RedditLang language support",
+  "description": "Syntax highlighting for RedditLang",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.79.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "redditlang",
+      "aliases": ["RedditLang", "redditlang"],
+      "extensions": [".rl",".phl"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "redditlang",
+      "scopeName": "source.redditlang",
+      "path": "./syntaxes/redditlang.tmLanguage.json"
+    }]
+  }
+}
