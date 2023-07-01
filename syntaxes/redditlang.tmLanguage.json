@@ -26,6 +26,16 @@
           "name": "comment.line.number-sign.redditlang",
           "begin": "#",
           "end": "$\n?"
+        },
+        {
+          "comment": "Numeric Constant, this took too long to make",
+          "name": "constant.numeric",
+          "match": "[⨋¡-]?\\d+(\\.\\d+)?(?![\\d⨋¡-])"
+        },
+        {
+          "comment": "Null",
+          "name": "constant.other",
+          "match": "\\bwat\\b"
         }
       ]
     },
@@ -33,34 +43,53 @@
       "patterns": [
         {
           "name": "keyword.control.redditlang",
-          "match": "\\b(is|but|isnt|spez|repeatdatshid|test|wall|sthu|call)\\b"
+          "match": "\\b(is|but|isnt|spez|repeatdatshid|test|wall|sthu|call|shoot)\\b"
+        },
+        {
+          "name": "entity.name.namespace",
+          "match": "\\b(?<=subreddit[ \\t])r/[A-Za-z_][\\w_]*\\b"
         },
         {
           "name": "keyword.control.redditlang",
-          "match": "\\b((bar|debug)\\s)*callmeonmycellphone\\b"
+          "match": "\\b((bar|debug)[ \\t])+(?=callmeonmycellphone)\\b"
         },
         {
           "name": "keyword.control.redditlang",
-          "match": "\\b((bar)\\s)*meth\\b"
+          "match": "\\b((bar)[ \\t])+(?=meth)\\b"
         },
         {
-          "name": "keyword.other",
-          "match": "\\b(weneed|bringme|subreddit|school|damn)\\b"
+          "name": "keyword.other.redditlang",
+          "match": "\\b(weneed|bringme|subreddit|school|damn|meth|callmeonmycellphone)\\b"
         },
         {
-          "comment": "Types",
-          "name": "entity.name.type",
-          "match": "(?!damn)\\s([A-Za-z_][\\w_]*)\\s"
+          "comment": "Variable Name",
+          "name": "variable.name.redditlang",
+          "match": "(?<=meth)[ \\t]([A-Za-z_][\\w_]*)\\b"
+        },
+        {
+          "comment": "Variable Name",
+          "name": "entity.name.function.redditlang",
+          "match": "(?<=call)[ \\t]([A-Za-z_][\\w_]*)\\b"
+        },
+        {
+          "comment": "Function Variable Name",
+          "name": "variable.parameter.redditlang",
+          "match": "([A-Za-z_][\\w_]*)[ \\t](?=damn[ \\t]([A-Za-z_][\\w_]*)\\b)"
+        },
+        {
+          "comment": "Function Name",
+          "name": "entity.name.function.redditlang",
+          "match": "(?<=callmeonmycellphone)[ \\t]([A-Za-z_][\\w_]*)\\b"
+        },
+        {
+          "comment": "Type Name",
+          "name": "entity.name.type.redditlang",
+          "match": "(?<=damn)[ \\t]([A-Za-z_][\\w_]*)\\b"
         },
         {
           "comment": "Class Name",
-          "name": "entity.name.class",
-          "match": "(?!school)\\s([A-Za-z_][\\w_]*)\\s"
-        },
-        {
-          "comment": "Var Name",
-          "name": "variable.name",
-          "match": "(?!meth)\\s([A-Za-z_][\\w_]*)\\s"
+          "name": "entity.name.class.redditlang",
+          "match": "(?<=school)[ \\t]([A-Za-z_][\\w_]*)\\b"
         }
       ]
     },
