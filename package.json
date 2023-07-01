@@ -6,6 +6,7 @@
   "repository": {
     "url": "https://github.com/elijah629/redditlang-vscode"
   },
+  "publisher": "elijah629",
   "engines": {
     "vscode": "^1.79.0"
   },
