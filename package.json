@@ -3,6 +3,9 @@
   "displayName": "RedditLang language support",
   "description": "Syntax highlighting for RedditLang",
   "version": "0.0.1",
+  "repository": {
+    "url": "https://github.com/elijah629/redditlang-vscode"
+  },
   "engines": {
     "vscode": "^1.79.0"
   },
@@ -10,16 +13,26 @@
     "Programming Languages"
   ],
   "contributes": {
-    "languages": [{
-      "id": "redditlang",
-      "aliases": ["RedditLang", "redditlang"],
-      "extensions": [".rl",".phl"],
-      "configuration": "./language-configuration.json"
-    }],
-    "grammars": [{
-      "language": "redditlang",
-      "scopeName": "source.redditlang",
-      "path": "./syntaxes/redditlang.tmLanguage.json"
-    }]
+    "languages": [
+      {
+        "id": "redditlang",
+        "aliases": [
+          "RedditLang",
+          "redditlang"
+        ],
+        "extensions": [
+          ".rl",
+          ".phl"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "redditlang",
+        "scopeName": "source.redditlang",
+        "path": "./syntaxes/redditlang.tmLanguage.json"
+      }
+    ]
   }
 }
