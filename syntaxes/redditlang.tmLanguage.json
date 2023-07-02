@@ -89,7 +89,7 @@
         {
           "comment": "Function Parameter Name",
           "name": "variable.parameter.redditlang",
-          "match": "(?<=callmeonmycellphone[ \\t]+[A-Za-z_][\\w_]*(?:[ \\t]+damn[ \\t]+)?[ \\t]*[A-Za-z_][\\w_]*(?:\\[\\])?\\(.*)(?<!damn[ \\t]+)\\b(?!damn)[A-Za-z_][\\w_]*(?=.*\\))"
+          "match": "(?<=callmeonmycellphone[ \\t]+[A-Za-z_][\\w_]*(?:[ \\t]+damn[ \\t]+[A-Za-z_][\\w_]*)?(?:\\[\\])?\\(.*)(?<!damn[ \\t]+)\\b(?!damn)[A-Za-z_][\\w_]*(?=.*\\))"
         }
       ]
     },
