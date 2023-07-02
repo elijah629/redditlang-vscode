@@ -2,7 +2,7 @@
   "name": "redditlang",
   "displayName": "RedditLang language support",
   "description": "Syntax highlighting for RedditLang",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "icon": "./icon.png",
   "repository": {
     "url": "https://github.com/elijah629/redditlang-vscode"
