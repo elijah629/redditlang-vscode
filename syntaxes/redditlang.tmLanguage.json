@@ -47,15 +47,15 @@
         },
         {
           "name": "entity.name.namespace",
-          "match": "\\b(?<=subreddit[ \\t])r/[A-Za-z_][\\w_]*\\b"
+          "match": "\\b(?<=subreddit[ \\t]+)r/[A-Za-z_][\\w_]*\\b"
         },
         {
           "name": "keyword.control.redditlang",
-          "match": "\\b((bar|debug)[ \\t])+(?=callmeonmycellphone)\\b"
+          "match": "\\b((bar|debug)[ \\t]+)+(?=callmeonmycellphone)\\b"
         },
         {
           "name": "keyword.control.redditlang",
-          "match": "\\b((bar)[ \\t])+(?=meth)\\b"
+          "match": "\\b(bar[ \\t]+)+(?=meth)\\b"
         },
         {
           "name": "keyword.other.redditlang",
@@ -64,32 +64,32 @@
         {
           "comment": "Variable Name",
           "name": "variable.name.redditlang",
-          "match": "(?<=meth)[ \\t]([A-Za-z_][\\w_]*)\\b"
+          "match": "(?<=meth[ \\t]+)([A-Za-z_][\\w_]*)\\b"
         },
         {
-          "comment": "Variable Name",
+          "comment": "Call Name",
           "name": "entity.name.function.redditlang",
-          "match": "(?<=call)[ \\t]([A-Za-z_][\\w_]*)\\b"
-        },
-        {
-          "comment": "Function Variable Name",
-          "name": "variable.parameter.redditlang",
-          "match": "([A-Za-z_][\\w_]*)[ \\t](?=damn[ \\t]([A-Za-z_][\\w_]*)\\b)"
+          "match": "(?<=call[ \\t]+)([A-Za-z_][\\w_]*)\\b"
         },
         {
           "comment": "Function Name",
           "name": "entity.name.function.redditlang",
-          "match": "(?<=callmeonmycellphone)[ \\t]([A-Za-z_][\\w_]*)\\b"
+          "match": "(?<=callmeonmycellphone[ \\t]+)([A-Za-z_][\\w_]*)\\b"
         },
         {
           "comment": "Type Name",
           "name": "entity.name.type.redditlang",
-          "match": "(?<=damn)[ \\t]([A-Za-z_][\\w_]*)\\b"
+          "match": "(?<=damn[ \\t]+)([A-Za-z_][\\w_]*)\\b"
         },
         {
           "comment": "Class Name",
           "name": "entity.name.class.redditlang",
-          "match": "(?<=school)[ \\t]([A-Za-z_][\\w_]*)\\b"
+          "match": "(?<=school[ \\t]+)([A-Za-z_][\\w_]*)\\b"
+        },
+        {
+          "comment": "Function Parameter Name",
+          "name": "variable.parameter.redditlang",
+          "match": "(?<=callmeonmycellphone[ \\t]+[A-Za-z_][\\w_]*(?:[ \\t]+damn[ \\t]+)?[ \\t]*[A-Za-z_][\\w_]*(?:\\[\\])?\\(.*)(?<!damn[ \\t]+)\\b(?!damn)[A-Za-z_][\\w_]*(?=.*\\))"
         }
       ]
     },
