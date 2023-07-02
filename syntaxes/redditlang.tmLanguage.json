@@ -64,27 +64,27 @@
         {
           "comment": "Variable Name",
           "name": "variable.name.redditlang",
-          "match": "(?<=meth[ \\t]+)([A-Za-z_][\\w_]*)\\b"
+          "match": "(?<=meth[ \\t]+)[A-Za-z_][\\w_]*"
         },
         {
           "comment": "Call Name",
           "name": "entity.name.function.redditlang",
-          "match": "(?<=call[ \\t]+)([A-Za-z_][\\w_]*)\\b"
+          "match": "(?<=call[ \\t]+)[A-Za-z_][\\w_]*"
         },
         {
           "comment": "Function Name",
           "name": "entity.name.function.redditlang",
-          "match": "(?<=callmeonmycellphone[ \\t]+)([A-Za-z_][\\w_]*)\\b"
+          "match": "(?<=callmeonmycellphone[ \\t]+)[A-Za-z_][\\w_]*"
         },
         {
           "comment": "Type Name",
           "name": "entity.name.type.redditlang",
-          "match": "(?<=damn[ \\t]+)([A-Za-z_][\\w_]*)\\b"
+          "match": "(?<=damn[ \\t]+)[A-Za-z_][\\w_]*"
         },
         {
           "comment": "Class Name",
           "name": "entity.name.class.redditlang",
-          "match": "(?<=school[ \\t]+)([A-Za-z_][\\w_]*)\\b"
+          "match": "(?<=school[ \\t]+)[A-Za-z_][\\w_]*"
         },
         {
           "comment": "Function Parameter Name",
