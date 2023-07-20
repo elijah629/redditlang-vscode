@@ -43,7 +43,7 @@
       "patterns": [
         {
           "name": "keyword.control.redditlang",
-          "match": "\\b(is|but|isnt|spez|repeatdatshid|test|wall|sthu|call|shoot)\\b"
+          "match": "\\b(is|but|isn't|spez|repeatdatshid|test|wall|sthu|call|shoot)\\b"
         },
         {
           "name": "entity.name.namespace",
